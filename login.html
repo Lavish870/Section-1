@@ -17,12 +17,59 @@
             border-radius: 10px;
             padding: 30px;
             box-shadow: 3px 3px 10px 0px rgba(0, 0, 0, 0.600);
+            box-sizing: border-box;
+            background-color: white;
         }
         body{
             display: flex;
             justify-content: center;
             align-items: center;
             height: 100vh;
+
+            /*background-color: aqua;
+            background-image: linear-gradient(30deg, rgb(0, 26, 255), rgb(255, 205, 134), rgb(101, 253, 225))*/
+
+            background-image: url('https://png.pngtree.com/thumb_back/fh260/background/20240919/pngtree-a-background-of-orange-blue-and-yellow-gradients-with-gritty-appearance-image_16233934.jpg');
+            background-size: cover;
+
+        }
+
+        .form-title{
+            text-align: center;
+            font-size: 30px;
+        }
+
+        .text-input{
+            width: 100%;
+            display: block;
+            padding: 10px;
+            box-sizing: border-box;
+            margin-bottom: 30px;
+            margin-top: 5px;
+        }
+        .btn-submit{
+            background-color: blueviolet;
+            color: white;
+            border: none;
+            padding: 10px;
+            display: block;
+            width: 100%;
+        }
+
+        .link{
+            display: block;
+            color: blueviolet;
+            text-decoration: none;
+        }
+
+        .forgot-link{
+            text-align: right;
+            margin-bottom: 20px;
+        }
+
+        .signup-link{
+            text-align: center;
+            margin-top: 20px;
         }
     </style>
 </head>
@@ -30,20 +77,31 @@
 
     <div class="card">
 
-        <h3>Login Form</h3>
+        <h3 class="form-title">Login Form</h3>
         <form>
             <label for="">Email Address</label>
             <input type="email" class="text-input">
 
-            <br><br>
+            
 
             <label for="">Password</label>
             <input type="password" class="text-input">
-            <br><br>
+            
 
+            <a href="#" class="link forgot-link">Forgot Password</a>
+            
+            <br><br>
+            
             <button class="btn-submit">Submit</button>
+
+             <br><br>
+             
+            <a href="#" class="link signup-link">
+                Not Registered Yet? Signup now
+            </a>
         </form>
     </div>
+    
     
 </body>
 </html>
