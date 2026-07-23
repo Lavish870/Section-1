@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Design</title>
+
+    <link href="https://fonts.googleapis.com/css?family=Roboto:100,200,300,regular,500,600,700,800,900,100italic,200italic,300italic,italic,500italic,600italic,700italic,800italic,900italic" rel="stylesheet" />
+
+    <style>
+
+        .card{
+            width: 60%;
+            height: 70%;
+            border-radius: 10px;
+            padding: 30px;
+            box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.600);
+            box-sizing: border-box;
+            background-color: rgb(242, 242, 242);
+        }
+
+        body{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 110vh;
+            background-color: whitesmoke;
+        }
+
+        h2{
+            text-align: center;
+            font-size: 20px;
+        }
+
+        .txt{
+            text-align: center;
+            font-size: 12px;
+
+        }
+        .parent{
+             display: flex;
+            flex-direction: row;
+
+            justify-content: space-evenly;
+            align-items: center;
+            height: 40vh;
+        }
+        .child{
+            background-color: white;
+            color: black;
+            padding: 30px;
+            border: none;
+            border-radius: 10px;
+        }
+        .btn{
+            background-color: whitesmoke;
+            color: black;
+            border: none;
+            border-radius: 20px;
+            padding: 10px;
+            width: 130px;
+            font-size: 10px;
+            box-shadow: 2px 2px 4px 0px grey;
+        }
+
+        
+
+    </style>
+</head>
+<body>
+
+    <div class="card">
+        <h2>Get the most out of your mobile <br> with the right subscription</h2>
+
+        <p class="txt">All devices come with free delivery or pickup as standard.See information on <br> available shopping options for your location.</p>
+
+        <div class="parent">
+            <div class="child" style="box-shadow: -15px -15px 0px 0px rgba(255, 255, 0, 0.248);">
+
+                <h3>Ice Mobile 10GB</h3>
+                <p style="font-size: 10px;">Up to 100MB/s</p>
+                <p style="font-size: 10px;"><b style="font-size: 15px;">299,-</b>/month</p>
+                <br><br>
+                <button class="btn">Add subscription</button>
+            </div>
+            <div class="child" style="box-shadow: -15px -15px 0px 0px rgba(232, 4, 232, 0.189);">
+                <h3>Telia Mobil 15GB</h3>
+                <p style="font-size: 10px;">Unlimited calls,SMS and MMS</p>
+                <p style="font-size: 10px;"><b style="font-size: 15px;">953,-</b>/month</p>
+                <br><br>
+                <button class="btn">Add subscription</button>
+            </div>
+            <div class="child" style="box-shadow: -15px -15px 0px 0px rgba(0, 0, 255, 0.218);">
+                <h3>Telenor Next Fast</h3>
+                <p style="font-size: 10px;">Up to 100MB/s</p>
+                <p style="font-size: 10px;"><b style="font-size: 15px;">1028,-</b>/month</p>
+                <br><br>
+                <button class="btn">Add subscription</button>
+            </div>
+        </div>
+        <br><br>
+        <button style="background-color: black; color: white; display: flex; justify-content: center; align-items: center; border: none; padding: 12px; border-radius: 30px; text-align: center;">See all subscriptions</button>
+    </div>
+    
+</body>
+</html>
